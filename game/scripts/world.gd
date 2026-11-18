@@ -455,7 +455,7 @@ func _sky(dt: float) -> void:
 	web.light = lv
 	tree_mat.set_shader_parameter("t", t)
 	tree_mat.set_shader_parameter("wind", n.wind.length())
-	tree_mat.set_shader_parameter("season", four)
+	tree_mat.set_shader_parameter("yp", yp)
 	floor_mat.set_shader_parameter("season", four)
 	leaves.emitting = four.z > 0.45 and n.forest_n > 2 and speed > 0.0
 	petals.emitting = four.x > 0.55 and n.forest_n > 2 and speed > 0.0
